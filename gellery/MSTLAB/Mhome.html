@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Garden Visionaries</title>
+    </head>
+    <style>
+        body{
+            background:url("backgroungImg.jpg") no-repeat;
+            background-attachment: scroll;
+            background-color: #dde1e7;
+            
+        }
+        ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                background:linear-gradient(to left,#330,#330,#330,#330,#330,#330) repeat;
+                position: absolute;
+                top:0;left:0;right:0;
+            }
+            li{
+                float:right;
+            }
+            li a {
+                display: block;
+                text-align: center;
+                /*color: #3e2723;*/
+                color:palegoldenrod;
+                padding: 20px 20px;
+                text-decoration: none;
+                font-size:1.6em;
+                font-family: American TypeWritter;
+            }
+            li:hover{
+                border-radius: 3rem;
+                background: radial-gradient(#9f3,transparent);
+                
+            }
+            li a:hover{
+                color:#4e342e;
+            }
+            #logo{
+                width:45px;
+                height:45px;
+                border-radius:50%;
+                float:left;
+                margin:5px 0 10px 5px;
+                border:5px double #996;
+            }
+            #b{
+                width:8px;
+                height:8px;
+                border:1px solid palegoldenrod;
+                position:absolute;
+                margin:50px 0 10px 45px;
+                transform: rotate(45deg);
+                animation:rotate 3s ease infinite;
+            }
+            #c{
+                width:8px;
+                height:8px;
+                border:1px solid palegoldenrod;
+                position:absolute;
+                margin:45px 0 10px 10px;
+                border-radius: 50%;
+                animation:pop 3s ease infinite;
+            }
+            @keyframes pop {
+                0%{
+                    transform: scale(0);
+                }
+                100%{
+                    transform:scale(1);
+                }
+            }
+            @keyframes rotate
+            {
+                0%{
+                    transform:rotate(120deg);
+                }
+                50%{
+                    transform:rotate(240deg);
+                }
+                100%{
+                    transform:rotate(360deg);
+                }
+            }
+            h1{
+                color:palegoldenrod;
+                font-size: 5em;
+                
+                word-spacing: 15px;
+                font-family: Brush Script MT;
+            }
+            .main{
+                width:60%;
+                height:600px;
+                background:transparent;
+                
+                display: grid;
+                place-items: center;
+                margin:10% auto 0;
+                
+            }
+            .featurescontainer{
+                width:80%;
+                height:450px;
+                border-radius: 10px;
+
+                display: grid;
+                
+                margin:15% auto 5%;
+                background:#dde1e7;
+                border:1px inset;
+                box-shadow: 3px 3px 5px gray;
+
+            }
+            #featuresbox {
+                width:100%;
+                height:300px;
+                display: grid;
+                grid-template-columns:1fr 1fr 1fr 1fr;
+                place-items: center;
+                
+            }
+            #f1{
+                width:210px;
+                height:270px;
+                text-align: justify;
+                padding:8px;
+                border-radius: 8px;
+                background: #dde1e7;
+                box-shadow: 2px 2px 5px grey;
+            }
+            h2{
+                text-align:center;
+                font-size:2em;
+                font-family: sans-serif;
+            }
+            progress{
+                margin:0 auto;
+            }
+            .plantscontainer{
+                width:90%;
+                height:800px;
+                border:1px inset;
+                margin:7% auto;
+
+                background: #dde1e7;
+                box-shadow: 2px 2px 7px grey;
+            }
+            #plantsboxr
+            {
+                width:90%;
+                height:400px;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                place-items: center;
+                margin:0 auto;
+            }
+            #plantsboxr #p1{
+                width:500px;
+                height:350px;
+                background-size: 100% 100%;
+                animation:fgallery 20s infinite;
+                
+                filter: grayscale(0.3);
+            }
+            @keyframes fgallery {
+                0%
+                {
+                    background-image:url("roseImg.webp");
+                    
+                }
+                10%{
+                    background-image:url("marigoldImg.webp");
+                
+                }
+                20%{
+                    background-image:url("rImg.webp");                    
+                }
+                30%
+                {
+                    background-image:url("hImg.jpg");
+                    
+                }
+                40%
+                {
+                    background-image:url("csImg.jpg");
+                    
+                }
+                50%
+                {
+                    background-image:url("wyImg.jpg");
+                    
+                }
+                60%
+                {
+                    background-image:url("wsImg.jpeg");
+                
+                }
+                70%
+                {
+                    background-image:url("ofImg.jpg");
+                    
+                }
+                80%
+                {
+                    background-image:url("sunflowerImg.jpg");
+                    
+                }
+                90%
+                {
+                    background-image:url("kfImg.jpg");
+                    
+                }
+                100%
+                {
+                    background-image:url("roseImg.webp");
+                    
+                }
+            }
+            #plantsboxr #p2{
+                width:500px;
+                height:350px;
+                
+                background-size: 100% 100%;
+                animation:vgallery 20s infinite;
+                filter: grayscale(0.3);
+            }
+            @keyframes vgallery {
+                0%
+                {
+                    background-image:url("curryleafImg.jpeg");                   
+                }
+                10%{
+                    background-image:url("ladyfingerImg.webp");
+                
+                }
+                20%{
+                    background-image:url("tomatoImg.jpg");                    
+                }
+                30%
+                {
+                    background-image:url("gonguraImg.jpg");
+                    
+                }
+                40%
+                {
+                    background-image:url("chilliImg.jpg");
+                    
+                }
+                50%
+                {
+                    background-image:url("cucumberImg.png");
+                    
+                }
+                60%
+                {
+                    background-image:url("bittergourdImg.webp");
+                
+                }
+                70%
+                {
+                    background-image:url("dondakayaImg.jpg");
+                    
+                }
+                80%
+                {
+                    background-image:url("thotakuraImg.webp");
+                    
+                }
+                90%
+                {
+                    background-image:url("beansImg.webp");
+                    
+                }
+                100%
+                {
+                    background-image:url("curryleafImg.jpeg");                   
+                }
+            }
+
+            #p3{
+                width:700px;
+                height:350px;
+                
+                background-size: 100% 100%;
+                animation:lgallery 10s linear infinite;
+                margin:0 auto;
+                filter: grayscale(0.3);
+            }
+            @keyframes lgallery{
+                0%
+                {
+                    background-image: url("guavaImg.jpg");
+                }
+                20%{
+                    background-image: url("mangoImg.jpg");
+                }
+                40%
+                {
+                    background-image: url("sugarcaneImg.webp");
+                }
+                60%
+                {
+                    background-image: url("sapotaImg.jpeg");
+                }
+                80%
+                {
+                    background-image: url("bananaImg.webp");
+                }
+                100%
+                {
+                    background-image: url("guavaImg.jpg");
+                }
+                
+            }
+            #buyarrow
+            {
+                width:40px;
+                height:40px;
+                border-radius: 50%;
+                border:1px solid grey;
+                margin-left:170px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                box-shadow: 2px 2px 5px grey;
+            }
+
+            .schedulingbox
+            {
+                width:90%;
+                height:600px;                margin:0 auto 7%;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                box-shadow: 2px 2px 5px grey;
+                border:1px inset grey;
+                border-radius: 10px;
+            }
+            #schedulebox
+            {
+                width:400px;
+                height:500px;
+                
+                display: flex;
+                align-items: center;
+                
+                
+            }
+            #calenderinfo
+            {
+                width:10px;
+                height:80%;
+                background:#330;
+                
+                margin-left: 25%;
+                
+
+            }
+            #calenderf
+            {
+                width:500px;
+                height:400px;
+                
+                display: grid;
+                grid-template-rows: 1fr 1fr;
+                align-items: center;
+            }
+            #calenderfblock
+            {
+                width:400px;
+                height:150px;
+                
+                display: flex;
+                align-items: center;
+                margin-left:7%;
+                
+
+            }
+            #arrow
+            {
+                width:40px;
+                height:40px;
+                border-radius: 50%;
+                border:1px solid grey;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            #info
+            {
+                width:90%;
+                height:130px;
+                box-shadow: 2px 2px 5px grey;
+                padding:5px;
+            }
+            footer{
+                width:100%;
+                height:400px;
+                background-color:#330;
+                left:0;
+                right:0;
+                position:absolute;
+            }
+            #contactbox{
+                width:90%;
+                height:inherit;
+                
+                margin:0 auto;
+                display: grid;
+                place-items: center;
+                grid-template-columns: repeat(3,1fr);
+                
+            }
+            #c1{
+                width:270px;
+                height:300px;   
+                color:palegoldenrod;
+                padding:8px;      
+            }
+            #followbox{
+                width:100%;
+                height:70px;
+            
+                margin:0 auto;
+                display: flex;
+                align-items: center;
+                
+            }
+            #followbox img{
+                width:40px;
+                height:40px;
+                border-radius: 50%;
+                filter: grayscale(0.9);
+                margin-right:18px;
+            }
+            #followbox img:hover{
+                filter: grayscale(0);
+            }
+    </style>
+    <body>
+        <ul>
+            <div id="b"></div>
+            <div id="c"></div>
+            <img src="logoImg.jpg" id="logo">
+
+            <li><a href="#contact" onclick="scrollToContactList()">Contact</a></li>
+            <li><a href="http://localhost/dynamicfullcalender/reg/signup.html" target="_blank">SignUp</a></li>
+            <li><a href="http://localhost/dynamicfullcalender/reg/login.php" target="_blank">Login</a></li>
+            <li><a href="#home">Home</a></li>
+        </ul>
+        <div class="main">
+            <h1>LET'S PLANT<br><span style="color:#9f3;font-size:1em;">START YOUR</span><br><span style="color:Luminari">OWN GARDEN</span></h1>
+        </div>
+        <div class="featurescontainer">
+            <h2>Key Features</h2>
+            <div id="featuresbox">
+                <div id="f1">
+                    <p style="font-size: 25px;font-family: Courier;font-weight: bolder;">Diverse Plant<br>Selection</p>
+                    <p style="font-size: 20px;">Browse our extensive plant gallery and dope out a vibrant array of flora to suit any gardening style.</p>
+                    <div id="buyarrow" title="Click here to Buy"><a href="gallery.html" style="text-decoration: none;color:inherit;">&#10095;</a></div>
+                </div>
+                <div id="f1">
+                    <p style="font-size:25px;font-family: Courier;font-weight: bolder;">Scheduling</p><br>
+                    <p style="font-size:20px;">Efficiently  manage  plant care with personalized watering schedules and timely notifications.</p>
+                    <div id="buyarrow" title="Click here to Buy"><a href="#schedulebox" style="text-decoration: none;color: inherit;">&#10095;</a></div>
+                </div>
+                <div id="f1">
+                    <p style="font-size:25px;font-family: Courier;font-weight:bolder;">Expert<br>Guidance</p>
+                    <p style="font-size:20px;">Gain valuable insights from our team of experienced landscapers and gardening experts to elevate your gardening experience.</p>
+                </div>
+                <div id="f1">
+                    <p style="font-size: 25px; font-family: Courier; font-weight: bolder;">E-Commerce</p>
+                    <p style="font-size: 20px;">Discover the seamless shopping experience and diverse range of plants available through our E-Commerce platform from the comfort of your home.</p>
+                </div>
+            </div>
+            <progress></progress>
+        </div>
+
+        <div class="plantscontainer">
+            <div id="plantsboxr">
+                <div id="p1"></div>
+                <div id="p2"></div>
+            </div>
+                <div id="p3"></div>
+        </div>
+
+        <div class="schedulingbox">
+            <div id="schedulebox">
+                <img src="calendar.jpg" width="100%" height="100%" style="border-radius: 10px;">
+            </div>
+            <div id="schedulebox" style="width:600px;">
+                <div id="calenderinfo">
+                    <div id="calenderf">
+                        <div id="calenderfblock">
+                            <div id="arrow"><a href="http://localhost/dynamicfullcalender/dynamic-full-calendar.html" style="text-decoration: none;color: inherit;">&#9735;</a></div>
+                            <div id="info">
+                                <h3>Add Events</h3>
+                                <p style="font-size: 20px;text-align:justify;">We are featuring an interactive calendar , customizable options for organising on the go.</p>
+                            </div>
+                        </div>
+                        <div id="calenderfblock">
+                            <div id="arrow"><a href="http://localhost/dynamicfullcalender/Reminder/" style="text-decoration: none;color: inherit;">&#9735;</a></div>
+                            <div id="info">
+                                <h3>Care Reminders</h3>
+                                <p style="font-size: 20px;text-align:justify;">Keep your plants healthy with our watering reminders.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+         <footer id="contact">
+            <div id="contactbox">
+                <div id="c1">
+                    <p style="font-size: 25px; font-family: sans-serif; font-weight: bolder;">About Us <hr style="width:30px; float: left; position: absolute;top:27%;"></p><br>
+                    <p style="text-align: justify; font-size:18px;">P Gardens offers a diverse selection of healthy plants and gardening supplies, catering to both amateur gardeners and seasoned enthusiasts.With knowledgeable staff providing personalized advice, it's a one-stop destination for all your gardening needs.</p>
+                </div>
+                <div id="c1">
+                    <p style="font-size: 25px; font-family: sans-serif; font-weight: bolder;">Contact<hr style="width:30px; float:left;position: absolute;top:27%;"></p>
+                    <br>
+                    <p style="font-size: 20px; word-spacing: 5px;">&phone; : +91 9392442828<br>&#9993; :<a href="mailto:cvsh.p37@gmail.com" style="text-decoration: none; color:palegoldenrod;"> cvsh.p37@gmail.com</a><br>&#x1F3E1; : SRKREC
+                        <br>Bhimavaram - 534204.<br>W.G.Dt.,A.P.INDIA
+                    </p>
+                </div>
+                <div id="c1">
+                    <p style="font-size: 25px; font-family: sans-serif; font-weight: bolder;">Follow Us<hr style="width:30px; float:left;position: absolute;top:27%;"></p><br>
+                    <div id="followbox">
+                        <img src="iimg.jpeg">
+                        <img src="facebookImg.png">
+                        <img src="cimg.png">
+                        <img src="timg.jpeg">
+                    </div>
+                    <div style="display: flex; align-items: center;"><img src="logoImg.jpg" width="60px" height="60px" style="border-radius: 10%; margin-right: 20px;"> <span style="font-family: Brush Script MT; font-size: 25px;">P GARDENS</span></div>
+
+                </div>
+
+            </div>
+        </footer>
+        <script>
+        function scrollToContactList() {
+            const contactListSection = document.getElementById('contact');
+            
+            contactListSection.scrollIntoView({ behavior: 'smooth' });
+            
+            return false;
+        }
+        </script>
+    </body>
+</html>

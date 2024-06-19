@@ -1,0 +1,8 @@
+body {
+  background-color: rgba(218, 2, 2, 0.4);
+  background-image: url('ani.jpeg');
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}

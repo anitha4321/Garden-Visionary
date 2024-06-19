@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Plants</title>
+        <style>
+            body{
+                background-color: #dde1e7;
+            }
+            .maincontainer
+            {
+                width:100%;
+                height:700px;
+                display: flex;
+                flex-direction: row;
+            }
+            .allplantsbox{
+                width:250px;
+                height:100%;              
+                display: flex;
+                flex-direction: column;
+                box-shadow: 2px 2px 5px grey;
+                position: sticky;
+            }
+            .allplants
+            {
+                width:200px;
+                height:150px;
+                display: grid;
+                place-items: center;
+            }
+            ul{
+                list-style-type: none;
+                margin:0;
+                padding: 0;
+            }
+            li a{
+                display:block;
+                width: 100%;
+                margin: 0 auto 10%;
+                font-size: 35px;
+                color: black;
+                text-align: center;
+                text-decoration: none;    
+            }
+            
+
+            .mainbox
+            {
+                width:100%;
+                height:100%;
+                display: grid;
+                align-items: center;
+            }
+            .mainbox h1{
+                margin-left: 10%;
+                font-size: 100px;
+
+            }
+            #flowers,#fruits,#vegetables
+            {
+                width:100%;
+                height:400px;
+                border:1px inset grey;
+                margin:5% auto;
+                display: grid;
+                place-items: center;
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+                overflow-y: scroll;
+                row-gap:100px;
+                padding:5% 0;
+                box-shadow:2px 2px 5px grey;
+            }
+            #f1
+            {
+                width:270px;
+                height:300px;
+                
+                margin-left: 40px;
+                overflow: hidden;
+                position: relative;
+                border-radius: 2px;
+            }
+            #f1 img{
+                width: 120%;
+                height:100%;
+                object-fit: cover;
+            }
+            #f1 .details
+            {
+                height:0px;
+                overflow:hidden;
+                width:100%;
+            }
+            #f1 :hover img{
+                transform: scaleX(120%);
+                transform: scaleY(110%);
+                transition: all 1s;
+
+            }
+            #f1:hover .details{
+                display: grid;
+                position: absolute;
+                color:white;
+                bottom: 0px;
+                background-color:transparent;
+                backdrop-filter: blur(15px);
+                height:40%;
+                transition: all 1s;
+                place-items: center;
+            }
+            .details a:hover{
+                background:radial-gradient(darkseagreen,transparent);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="maincontainer">
+            <div class="allplantsbox">
+                <marquee direction="down" width="250" height="200" behavior="alternate">
+                    <marquee behavior="alternate"><div style="width:40px;height:40px;border-radius: 50%;background-color: darkseagreen;"></div></marquee>
+                </marquee>
+                <marquee width="250" height="200">
+                    <marquee behavior="left"><div style="width:30px;height:30px;transform:rotate(90deg);background-color: darkseagreen;margin-top: 10%;"></div></marquee>
+                </marquee>
+                <div class="allplants">
+                    <ul>
+                        <li><a href="#flowers">Flowers</a></li>
+                        <li><a href="#vegetables">Vegetables</a></li>
+                        <li><a href="#fruits">Fruits</a></li>
+                    </ul>
+                </div>
+                <marquee width="250" height="200" behavior="alternate">
+                    <marquee direction="right" loop=""><div style="width:20px;height:20px;transform: rotate(45deg);background-color: darkseagreen;"></div></marquee>
+                </marquee>
+                <marquee width="250" height="200">
+                    <marquee behavior="left"><div style="width:25px;height:25px;transform:rotate(135deg);background-color: darkseagreen;"></div></marquee>
+                </marquee>
+                <marquee direction="down" width="250" height="200" behavior="alternate">
+                    <marquee behavior="alternate"><div style="width:35px;height:35px;border-radius: 50%;background-color: darkseagreen;"></div></marquee>
+                </marquee>
+            </div>
+            <div class="mainbox">
+                <h1>"Choose wisely<br>according to your individual needs."</h1>
+            </div>
+        </div>
+        <div id="flowers">
+                <div id="f1">
+                    <img src="roseImg.webp" alt="">
+                    <div class="details">
+                        <span style="font-size: 25px;">Rose</span>
+                        <a href="" style="text-decoration: none; color:white;display: grid; height:30px;place-items: center;">Click here -></a>
+                    </div>
+                </div>
+                <div id="f1">
+                    <img src="sunflowerImg.jpg" alt="">
+                    <div class="details">
+                        <span style="font-size: 25px;">Sunflower</span>
+                        <a href="" style="text-decoration: none; color:white;display: grid; height:30px;place-items: center;">Click here -></a>
+                    </div>
+                </div>
+                <div id="f1">         
+                     <img src="hibiscus.jpg" alt="">
+                    <div class="details">
+                        <span style="font-size: 25px;">Hibiscus</span>
+
+                        <a href="" style="text-decoration: none; color:white;display: grid; height:30px;place-items: center;">Click here -></a>
+                    </div></div>
+                <div id="f1">
+                    <img src="jasmine.jpg" alt="">
+                    <div class="details">
+                        <span style="font-size: 25px;">jasmine</span>
+                        <a href="" style="text-decoration: none; color:white;display: grid; height:30px;place-items: center;">Click here -></a>
+                    </div>
+                </div>
+                <div id="f1">
+                    <img src="wsImg.jpeg" alt="">
+                    <div class="details">
+                        <span style="font-size: 25px; color:black">Lily</span>
+                        <a href="" style="text-decoration: none; color:white;display: grid; height:30px;place-items: center;">Click here -></a>
+                    </div>
+                </div>
+                <div id="f1">
+                    <img src="wyImg.jpg" alt="">
+                    <div class="details">
+                        <span style="font-size: 25px;">Frangipani</span>
+
+                        <a href="" style="text-decoration: none; color:white;display: grid; height:30px;place-items: center;">Click here -></a>
+                    </div>
+                </div>
+                <div id="f1">
+                    <img src="csImg.jpg" alt="">
+                    <div class="details">
+                        <span style="font-size: 25px;">Crysanthemum</span>
+
+                        <a href="" style="text-decoration: none; color:white;display: grid; height:30px;place-items: center;">Click here -></a>
+                    </div>
+                </div>
+                <div id="f1">
+                    <img src="crossa.jpg" alt="">
+                    <div class="details">
+                        <span style="font-size: 25px;">Crossandra</span>
+                        <a href="" style="text-decoration: none; color:white;display: grid; height:30px;place-items: center;">Click here -></a>
+                    </div>
+                </div>
+        </div>
+
+
+
+
+        <div id="fruits">
+            <div id="f1">
+                <img src="bananaImg.webp" alt="">
+                <div class="details">
+                    <span style="font-size: 25px;">Banana</span>
+                    <a href="" style="text-decoration: none; color:white;display: grid; height:30px;place-items: center;">Click here -></a>
+                </div>
+            </div>
+            <div id="f1">
+                <img src="guava.jpg" alt="">
+                <div class="details">
+                    <span style="font-size: 25px;">Guava</span>
+                    <a href="" style="text-decoration: none; color:white;display: grid; height:30px;place-items: center;">Click here -></a>
+                </div>
+            </div>
+            <div id="f1">         
+                 <img src="mango.jpg" alt="">
+                <div class="details">
+                    <span style="font-size: 25px;">Mango</span>
+
+                    <a href="" style="text-decoration: none; color:white;display: grid; height:30px;place-items: center;">Click here -></a>
+                </div></div>
+            <div id="f1">
+                <img src="pome.jpg" alt="">
+                <div class="details">
+                    <span style="font-size: 25px;">Pomegranate</span>
+                    <a href="" style="text-decoration: none; color:white;display: grid; height:30px;place-items: center;">Click here -></a>
+                </div>
+            </div>
+            <div id="f1">
+                <img src="sapotaImg.jpeg" alt="">
+                <div class="details">
+                    <span style="font-size: 25px; color:black">Sapota</Sapota>
+                    <a href="" style="text-decoration: none; color:white;display: grid; height:30px;place-items: center;">Click here -></a>
+                </div>
+            </div>
+            <div id="f1">
+                <img src="jackfruit.jpeg" alt="">
+                <div class="details">
+                    <span style="font-size: 25px;">jackfruit</span>
+
+                    <a href="" style="text-decoration: none; color:white;display: grid; height:30px;place-items: center;">Click here -></a>
+                </div>
+            </div>
+            <div id="f1">
+                <img src="apple.jpeg" alt="">
+                <div class="details">
+                    <span style="font-size: 25px;">Apples</span>
+
+                    <a href="" style="text-decoration: none; color:white;display: grid; height:30px;place-items: center;">Click here -></a>
+                </div>
+            </div>
+            <div id="f1">
+                <img src="cus.jpg" alt="">
+                <div class="details">
+                    <span style="font-size: 25px;">Custard Apple</span>
+                    <a href="" style="text-decoration: none; color:white;display: grid; height:30px;place-items: center;">Click here -></a>
+                </div>
+            </div>
+    </div>
+    <div id="vegetables">
+        <div id="f1">
+            <img src="brinjal.jpg" alt="">
+            <div class="details">
+                <span style="font-size: 25px;">Brinjal</span>
+                <a href="" style="text-decoration: none; color:white;display: grid; height:30px;place-items: center;">Click here -></a>
+            </div>
+        </div>
+        <div id="f1">
+            <img src="tomatoImg.jpg" alt="">
+            <div class="details">
+                <span style="font-size: 25px;">Tomato</span>
+                <a href="" style="text-decoration: none; color:white;display: grid; height:30px;place-items: center;">Click here -></a>
+            </div>
+        </div>
+        <div id="f1">         
+             <img src="potato.jpg" alt="">
+            <div class="details">
+                <span style="font-size: 25px;">Potato</span>
+
+                <a href="" style="text-decoration: none; color:white;display: grid; height:30px;place-items: center;">Click here -></a>
+            </div></div>
+        <div id="f1">
+            <img src="chilliImg.jpg" alt="">
+            <div class="details">
+                <span style="font-size: 25px;">Chillies</span>
+                <a href="" style="text-decoration: none; color:white;display: grid; height:30px;place-items: center;">Click here -></a>
+            </div>
+        </div>
+        <div id="f1">
+            <img src="bittergourdImg.webp" alt="">
+            <div class="details">
+                <span style="font-size: 25px;">Bitter gourd</Sapota>
+                <a href="" style="text-decoration: none; color:white;display: grid; height:30px;place-items: center;">Click here -></a>
+            </div>
+        </div>
+        <div id="f1">
+            <img src="beansImg.webp" alt="">
+            <div class="details">
+                <span style="font-size: 25px;">Beans</span>
+
+                <a href="" style="text-decoration: none; color:white;display: grid; height:30px;place-items: center;">Click here -></a>
+            </div>
+        </div>
+        <div id="f1">
+            <img src="ladyfingerImg.webp" alt="">
+            <div class="details">
+                <span style="font-size: 25px;">Ladies Finger</span>
+
+                <a href="" style="text-decoration: none; color:white;display: grid; height:30px;place-items: center;">Click here -></a>
+            </div>
+        </div>
+        <div id="f1">
+            <img src="radish.jpg" alt="">
+            <div class="details">
+                <span style="font-size: 25px;">Radish</span>
+                <a href="" style="text-decoration: none; color:white;display: grid; height:30px;place-items: center;">Click here -></a>
+            </div>
+        </div>
+</div>
+    </body>
+</html>
